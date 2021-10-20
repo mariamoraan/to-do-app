@@ -27,7 +27,7 @@ const TaskInput = () =>{
             onChange={handleChange}
             type="text"
             name="task"
-            placeholder="Create a new to do"
+            placeholder="Create a new to do..."
             className="task-text"/>
             <input type="submit" className="none"/>
         </form>

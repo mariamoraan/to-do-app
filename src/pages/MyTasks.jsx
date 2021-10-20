@@ -14,14 +14,17 @@ import Tasks from '../containers/Tasks';
 
 
 const MyTasks = () =>{
-    const background = desk_lg;
+    var background = desk_lg;
+    console.log(screen.width);
+    screen.width > 600 ? background=desk_lg : background=mob_lg;
+    console.log(background)
     return(
         <div className="MyTasks">
             <header style={{ 
             backgroundImage: `url(${background})` 
             }}>
             </header>
-            <div class="MyTasks-elems">
+            <div className="MyTasks-elems">
                 <h1>TODO</h1>
                 <Tasks />
             </div>

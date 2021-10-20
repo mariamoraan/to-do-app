@@ -9,7 +9,7 @@
     "dev": "webpack --mode development",
     "start": "webpack-dev-server  --mode development",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/mia-moran/to-do-app"
   },
-  "homepage": "https://github.com/mia-moran/to-do-app#readme",
+  "homepage": "http://mia-moran.github.io/to-do-app",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

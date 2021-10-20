@@ -1,6 +1,6 @@
 .MyTasks{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header{
@@ -12,9 +12,8 @@ header{
     height: 30vh;
     width: 100%;
     background-size: cover;
-    background-position: center center;
+    background-position: start center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 h1{
     margin: 0;
