@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap);
+:root{--very-light-gray:hsl(0, 0%, 98%);--very-light-grayis-blue:hsl(236, 33%, 92%);--light-grayish-blue:hsl(233, 11%, 84%);--dark-grayish-blue:hsl(236, 9%, 61%);--very-dark-grayish-blue:hsl(235, 19%, 35%);--bright-blue:  hsl(220, 98%, 61%)}.dark{--very-dark-blue: hsl(235, 21%, 11%);--very-dark-desaturated: Blue: hsl(235, 24%, 19%);--light-grayish-blue: hsl(234, 39%, 85%);--light-grayish-blue-hover: hsl(236, 33%, 92%);--dark-grayish-blue: hsl(234, 11%, 52%);--very-dark-grayish-blue: hsl(233, 14%, 35%);--very-dark-grayish-blue: hsl(237, 14%, 26%)}body{padding:0;margin:0;height:100vh;font-size:18px;font-family:'Josefin Sans', sans-serif}
+
+.taskList-list{background:var(--very-light-gray);border-radius:5px 5px 0 0}.taskList-list-task{border-bottom:0.5px solid var(--light-grayish-blue)}
+
+.task{position:relative;display:flex;align-items:center;justify-content:left;padding:0 1rem}.remove-icon{padding-left:1rem;margin-left:auto;display:none;height:1rem;width:1rem}.task:hover{cursor:pointer}.task:hover .remove-icon{display:block}.remove-icon:hover{cursor:pointer}.input-task{border-radius:5px;background:var(--very-light-gray)}@media (max-width: 600px){.remove-icon{display:block}}
+
+.task-text{padding:1em;margin:0;font-size:1rem;font-weight:400;color:var(--very-dark-grayish-blue);transition:500ms ease-in-out}.task-text:hover{cursor:pointer}.done{color:var(--light-grayish-blue);text-decoration:line-through;animation-name:done-animation;animation-duration:500ms}@keyframes done-animation{from{text-decoration:none}to{text-decoration:line-through}}
+
+.task-text{padding:1em;font-size:1rem;font-weight:400;color:var(--very-dark-grayish-blue);transition:500ms ease-in-out;border:none;outline:none}.task-text::placeholder{color:var(--dark-grayish-blue)}.task-text:focus{color:var(--very-dark-grayish-blue);caret-color:var(--bright-blue)}form{display:flex;justify-content:left;align-items:center;font-size:1rem}input{display:block}.none{display:none}
+
+.completed-button{background:var(--very-light-gray);border:1px solid var(--light-grayish-blue);width:25px;height:25px;border-radius:100%;padding:1px;margin-right:1rem}.active{background:linear-gradient(140deg, #57ddff, #c058f3);animation-name:activate;animation-duration:500ms}@keyframes activate{from{background:var(--very-light-gray);transform:rotate(-70deg)}to{background:linear-gradient(140deg, #57ddff, #c058f3);transform:rotate(0)}}@keyframes turn{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.completed-button:hover{cursor:pointer;border-image-slice:1;background-image:linear-gradient(90deg, var(--very-light-gray), var(--very-light-gray)),radial-gradient(circle at top left, #57ddff, #c058f3);background-origin:border-box;background-clip:content-box, border-box;animation-name:turn;animation-iteration-count:infinite;animation-duration:1s}.active:hover{background-image:none;background:linear-gradient(90deg, #57ddff, #c058f3);opacity:0.5}
+
+
+.MyTasks{position:relative;height:100vh}header{position:absolute;top:0;left:0;margin:0;padding:0;height:30vh;width:100%;background-size:cover;background-position:center center;background-repeat:no-repeat;background-attachment:fixed}h1{margin:0;padding:0;margin-bottom:2rem;color:var(--very-light-gray)}.MyTasks-elems{position:absolute;top:10vh;left:0;right:0;margin:auto;z-index:100;width:25vw}@media (max-width: 600px){.MyTasks-elems{width:90vw;top:8vh}}
+
+
+nav{position:relative;padding:1rem;display:flex;justify-content:space-between;font-size:0.7rem;color:var(--very-dark-grayish-blue);background:var(--very-light-gray);border-radius:0 0 5px 5px}nav p,nav button{margin:0;padding:0;margin-right:0.7rem;color:var(--very-dark-grayish-blue);font-weight:bold}nav button{background:none;outline:none;border:none;font-size:0.7rem;transition:200ms ease-in-out}nav button:hover{cursor:pointer;color:var(--bright-blue)}.menu-mobile{justify-content:center;font-weight:700;margin-top:1rem;border-radius:5px;display:none}@media (max-width: 600px){.menu-mobile{display:flex}.center{display:none}}
+
+.task-gestor{border-radius:5px;-webkit-box-shadow:2px 21px 15px 5px rgba(0,0,0,0.26);box-shadow:2px 21px 15px 5px rgba(0,0,0,0.26)}
+
