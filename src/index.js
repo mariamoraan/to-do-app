@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Hola from './components/Hola';
+import App from './routes/App';
 
 ReactDOM.render(
-    <Hola />, 
+    <App />, 
     document.getElementById("app"));

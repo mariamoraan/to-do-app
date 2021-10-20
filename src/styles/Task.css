@@ -1,0 +1,34 @@
+.task{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    /* border-bottom: 0.5px solid var(--light-grayish-blue); */
+    padding: 0 1rem;
+}
+.remove-icon{
+    padding-left: 1rem;
+    margin-left: auto;
+    display: none;
+    height: 1rem;
+    width: 1rem;
+}
+.task:hover{
+    cursor: pointer;
+}
+.task:hover .remove-icon{
+    display: block;
+}
+.remove-icon:hover{
+    cursor: pointer;
+}
+.input-task{
+    border-radius: 5px;
+    background: var(--very-light-gray);
+}
+@media (max-width: 600px){
+    .remove-icon{
+        display: block;
+    }
+}

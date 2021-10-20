@@ -1,0 +1,26 @@
+.task-text{
+    padding:1em;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--very-dark-grayish-blue);
+    transition: 500ms ease-in-out;
+    border: none;
+    outline: none;
+}
+.task-text::placeholder { color: var(--dark-grayish-blue); }
+.task-text:focus{
+    color: var(--very-dark-grayish-blue);
+    caret-color: var(--bright-blue);
+}
+form{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1rem;
+}
+input{
+    display: block;
+}
+.none{
+    display: none;
+}

@@ -1,0 +1,51 @@
+.completed-button{
+    background: var(--very-light-gray);
+    border: 1px solid var(--light-grayish-blue);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    padding: 1px;
+    margin-right: 1rem;
+}
+
+.active{
+    background: linear-gradient(140deg,hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+    animation-name: activate;
+    animation-duration: 500ms;
+}
+@keyframes activate{
+    from{
+        background: var(--very-light-gray);
+        transform: rotate(-70deg);
+    }
+    to{
+        background: linear-gradient(140deg,hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+        transform: rotate(0);
+    }
+}
+@keyframes turn{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.completed-button:hover{
+    cursor: pointer;
+    border-image-slice: 1;
+    background-image: linear-gradient(90deg,var(--very-light-gray),var(--very-light-gray)), 
+    radial-gradient(circle at top left, hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation-name:turn;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+.active:hover{
+    background-image:none;
+    background: linear-gradient(90deg,hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+    opacity: 0.5;
+}
+    

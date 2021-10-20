@@ -2,6 +2,9 @@
 @import 'vars';
 
 body{
+    padding:0;
+    margin: 0;
+    height: 100vh;
     font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
 }
