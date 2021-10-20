@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
-    "start": "webpack-dev-server  --mode development"
+    "start": "webpack-dev-server  --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mia-moran/to-do-app/issues"
+    "url": "https://github.com/mia-moran/to-do-app"
   },
   "homepage": "https://github.com/mia-moran/to-do-app#readme",
   "dependencies": {
@@ -32,6 +34,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^6.4.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.4.0",
     "mini-css-extract-plugin": "^2.4.2",
