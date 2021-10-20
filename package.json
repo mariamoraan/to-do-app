@@ -1,0 +1,43 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server  --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mia-moran/to-do-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mia-moran/to-do-app/issues"
+  },
+  "homepage": "https://github.com/mia-moran/to-do-app#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.4.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.4.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.2.0",
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  }
+}
