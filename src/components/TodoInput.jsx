@@ -4,6 +4,7 @@ import '../styles/TodoInput.css';
 import add from '../assets/add_black_24dp.svg';
 
 const TodoInput = ({tasks, setTasks}) =>{
+    const [counter, setCounter] = useState(4);
     const [newTask, setNewTask] = useState('');
     const handleChange = (event) =>{
         setNewTask(event.target.value);
@@ -15,7 +16,8 @@ const TodoInput = ({tasks, setTasks}) =>{
         for(let i = 0; i<new_tasks.length ; i++){
             new_tasks[i].pos = i+1;
         }
-        setTasks([{'done':false, 'key':"task-"+tasks.length, 'text':newTask, 'show':true, 'pos':0},...new_tasks]);
+        setCounter(counter+1);
+        setTasks([{'done':false, 'key':"task-"+counter, 'text':newTask, 'show':true, 'pos':0},...new_tasks]);
         form.reset();
         setNewTask('');
     }
