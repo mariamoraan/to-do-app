@@ -83,7 +83,7 @@
         text-decoration: line-through;
     }
 }
-@media (pointer:coarse){
+@media (hover:hover){
     .remove-icon{
         opacity: 0;
         transition: 250ms ease-in-out;

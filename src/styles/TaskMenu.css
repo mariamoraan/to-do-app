@@ -36,7 +36,7 @@ nav button{
 .active-filter{
     color: var(--bright-blue);
 }
-@media (pointer:coarse){
+@media (hover: hover){
     nav button:hover{
         cursor: pointer;
         color: var(--bright-blue);
