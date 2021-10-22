@@ -8,17 +8,17 @@ import Todo from '../components/Todo';
 const TodoList = ({tasks, setTasks}) =>{
     
     return(
-        
+        <div className="taskList-list" >
+        {
         tasks
         .filter(task => !task.removed)
-        .map(task => (
-            <div className="taskList-list" key={task.key}>
-                {task.show ?
-                <div className="taskList-list-task" ><Todo tasks={tasks} task={task} setTasks={setTasks}/></div>
-                : null
-                }
-            </div>
+        .map(task => ( 
+                task.show ?
+                <div className="taskList-list-task" key={task.key}><Todo tasks={tasks} task={task} setTasks={setTasks}/></div>
+                : null     
         ))
+        }
+        </div>
         
     )
 }

@@ -13,6 +13,7 @@ const TodoInput = ({tasks, setTasks}) =>{
         var form = document.getElementById("task-input-form");
         setTasks([...tasks, {'done':false, 'key':"task-"+tasks.length, 'text':newTask, 'show':true}]);
         form.reset();
+        setNewTask('');
     }
     return (
         <div className="task-input">
@@ -23,7 +24,7 @@ const TodoInput = ({tasks, setTasks}) =>{
             type="text"
             name="task"
             placeholder="Create a new to do..."
-            className="task-text"/>
+            className="task-text-input"/>
             <input 
             style={{ backgroundImage: `url(${add})` }}
             type="submit" value=""  className="send-button"/>

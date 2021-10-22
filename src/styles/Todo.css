@@ -52,10 +52,7 @@
     to{
         transform:rotate(360deg);
     }
-}
-
-
-    
+} 
 
 .task-text{
     padding:1em;
@@ -64,6 +61,8 @@
     font-weight: 400;
     color: var(--very-dark-grayish-blue);
     transition: 500ms ease-in-out;
+    width: 70%;
+    text-overflow: clip;
 }
 .task-text:hover{
     cursor: pointer;

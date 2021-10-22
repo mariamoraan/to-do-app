@@ -5,7 +5,7 @@
     cursor: pointer;
 }
 
-.task-input .task-text{
+.task-input .task-text-input{
     padding:1em;
     font-size: 1rem;
     font-weight: 400;
@@ -15,8 +15,8 @@
     outline: none;
     border-radius: 5px;
 }
-.task-input .task-text::placeholder { color: var(--dark-grayish-blue); }
-.task-input .task-text:focus{
+.task-input .task-text-input::placeholder { color: var(--dark-grayish-blue); }
+.task-input .task-text-input:focus{
     color: var(--very-dark-grayish-blue);
     caret-color: var(--bright-blue);
 }
