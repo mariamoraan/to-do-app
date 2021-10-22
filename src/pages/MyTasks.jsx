@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 
 
 import '../styles/global.css';
@@ -10,14 +10,14 @@ import mob_dr from "../assets/bg-mobile-dark.jpg";
 import mob_lg from "../assets/bg-mobile-light.jpg";
 
 
-import Tasks from '../containers/Tasks';
+import TodoGestor from '../containers/TodoGestor';
 
 
 const MyTasks = () =>{
     var background = desk_lg;
-    console.log(screen.width);
     screen.width > 600 ? background=desk_lg : background=mob_lg;
-    console.log(background)
+    
+    
     return(
         <div className="MyTasks">
             <header style={{ 
@@ -26,7 +26,7 @@ const MyTasks = () =>{
             </header>
             <div className="MyTasks-elems">
                 <h1>TODO</h1>
-                <Tasks />
+                <TodoGestor />
             </div>
         </div>
     );

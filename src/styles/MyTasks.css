@@ -32,7 +32,14 @@ h1{
     width: 25vw;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1200px){
+    .MyTasks-elems{
+        width: 50vw;
+        top: 8vh;
+    }
+}
+
+@media (max-width: 700px){
     .MyTasks-elems{
         width: 90vw;
         top: 8vh;

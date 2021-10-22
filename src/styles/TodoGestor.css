@@ -1,0 +1,6 @@
+
+.todos{
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 21px 15px 5px rgba(0,0,0,0.26); 
+    box-shadow: 2px 21px 15px 5px rgba(0,0,0,0.26);
+}

@@ -1,0 +1,53 @@
+.task-input{
+    margin-bottom: 1rem;
+}
+.task-input:hover{
+    cursor: pointer;
+}
+
+.task-input .task-text{
+    padding:1em;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--very-dark-grayish-blue);
+    transition: 500ms ease-in-out;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.task-input .task-text::placeholder { color: var(--dark-grayish-blue); }
+.task-input .task-text:focus{
+    color: var(--very-dark-grayish-blue);
+    caret-color: var(--bright-blue);
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 5px;
+    background: white;
+    
+}
+input{
+   
+}
+
+.input{
+    
+}
+.send-button{
+    height: 25px;
+    width: 25px;
+    background: none;
+    border: none;
+    outline: none;
+    margin-right: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+}
