@@ -9,10 +9,19 @@ const TaskMenu = ({tasks, setTasks}) =>{
     const [actualFilter, setActualFilter] = useState({'k':'all', 'f':'key', 'v':null})
     const handleFilter = (k,f,v) =>{
         setActualFilter({'k':k, 'f':f, 'v':v})
-        setTasks(tasks.map(t => {
+        const new_tasks = Array.from(tasks);
+        new_tasks.map(t => {
             t.done == v ? t.show = false : t.show = true;
             return t;
-        }))
+        })
+        var count = 0;
+        for(let i = 0; i<new_tasks.length; i++){    
+            if(new_tasks[i].show == true){
+                new_tasks[i].pos = count;
+                count = count+1;
+            }
+        }
+        setTasks(new_tasks)
     }
     return(
         <div>

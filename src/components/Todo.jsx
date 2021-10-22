@@ -14,7 +14,11 @@ const Todo = ({task, tasks, setTasks}) => {
         setTasks(tasks.map(t => t.key == task.key ? task : t));
     }
     const toRemove = () =>{
-        setTasks(tasks.filter(t => t.key != task.key));
+        var new_tasks = tasks.filter(t => t.key != task.key);
+        for(let i = 0; i<new_tasks.length ; i++){
+            new_tasks[i].pos = i;
+        }
+        setTasks(new_tasks);
     }
 
     return(

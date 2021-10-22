@@ -1,8 +1,11 @@
 .taskList-list{
+    margin: 0;
+    padding: 0;
     border-radius: 5px 5px 0 0;
     background: var(--very-light-gray);
     max-height: 50vh;
     overflow-y: scroll;
+    list-style: none;
 }
 
 .taskList-list::-webkit-scrollbar {
@@ -18,6 +21,8 @@
     height: 10px;
 }
 .taskList-list::-webkit-scrollbar-thumb {
+    margin: 0;
+    padding: 0;
     background-color: #797979;
     border-radius: 20px;
     border: 2px solid #f1f2f3;
@@ -27,7 +32,9 @@
 }
 
 
+
 .taskList-list-task{
+    margin:0;
     border-bottom: 0.5px solid var(--light-grayish-blue);
     
 }

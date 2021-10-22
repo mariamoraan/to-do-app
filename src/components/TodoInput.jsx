@@ -11,7 +11,11 @@ const TodoInput = ({tasks, setTasks}) =>{
     const handleSubmit = (event) =>{
         event.preventDefault();
         var form = document.getElementById("task-input-form");
-        setTasks([...tasks, {'done':false, 'key':"task-"+tasks.length, 'text':newTask, 'show':true}]);
+        var new_tasks = Array.from(tasks);
+        for(let i = 0; i<new_tasks.length ; i++){
+            new_tasks[i].pos = i+1;
+        }
+        setTasks([{'done':false, 'key':"task-"+tasks.length, 'text':newTask, 'show':true, 'pos':0},...new_tasks]);
         form.reset();
         setNewTask('');
     }

@@ -24,6 +24,9 @@
   "homepage": "http://mia-moran.github.io/to-do-app",
   "dependencies": {
     "react": "^17.0.2",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-dnd": "^14.0.4",
+    "react-dnd-html5-backend": "^14.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3"
   },
