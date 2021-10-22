@@ -1,0 +1,111 @@
+
+.task{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    /* border-bottom: 0.5px solid var(--light-grayish-blue); */
+    padding: 0 1rem;
+}
+.remove-icon{
+    padding-left: 1rem;
+    margin-left: auto;
+    height: 1rem;
+    width: 1rem;
+}
+
+
+.remove-icon:hover{
+    cursor: pointer;
+}
+
+.completed-button{
+    background: var(--very-light-gray);
+    border: 1px solid var(--light-grayish-blue);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    padding: 1px;
+    margin-right: 1rem;
+}
+
+.active{
+    background: linear-gradient(140deg,hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+    animation-name: activate;
+    animation-duration: 500ms;
+}
+@keyframes activate{
+    from{
+        background: var(--very-light-gray);
+        transform: rotate(-70deg);
+    }
+    to{
+        background: linear-gradient(140deg,hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+        transform: rotate(0);
+    }
+}
+@keyframes turn{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
+    
+
+.task-text{
+    padding:1em;
+    margin:0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--very-dark-grayish-blue);
+    transition: 500ms ease-in-out;
+}
+.task-text:hover{
+    cursor: pointer;
+}
+.done{
+    color: var(--light-grayish-blue);
+    text-decoration: line-through;
+    animation-name: done-animation;
+    animation-duration:500ms;
+}
+
+@keyframes done-animation{
+    from{
+        text-decoration: none;
+    }
+    to{
+        text-decoration: line-through;
+    }
+}
+@media (pointer:coarse){
+    .remove-icon{
+        opacity: 0;
+        transition: 250ms ease-in-out;
+    }
+    .task:hover .remove-icon{
+        opacity: 1;
+    }
+    .completed-button:hover{
+        cursor: pointer;
+        border-image-slice: 1;
+        background-image: linear-gradient(90deg,var(--very-light-gray),var(--very-light-gray)), 
+        radial-gradient(circle at top left, hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        animation-name:turn;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+    }
+    .active:hover{
+        background-image:none;
+        background: linear-gradient(90deg,hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+        opacity: 0.5;
+        animation: none;
+    }
+}

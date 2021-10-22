@@ -14,7 +14,7 @@ nav button{
     margin: 0;
     padding:0;
     margin-right: 0.7rem;
-    color: var(--very-dark-grayish-blue);
+    color: var(--dark-grayish-blue);
     font-weight: bold;
 }
 nav button{
@@ -22,12 +22,9 @@ nav button{
     outline: none;
     border: none;
     font-size: 0.7rem;
-    transition: 200ms ease-in-out;
+    transition: 100ms ease-in-out;
 }
-nav button:hover{
-    cursor: pointer;
-    color: var(--bright-blue);
-}
+
 
 .menu-mobile{
     justify-content: center;
@@ -36,8 +33,16 @@ nav button:hover{
     border-radius: 5px;
     display: none;
 }
-
-@media (max-width: 600px){
+.active-filter{
+    color: var(--bright-blue);
+}
+@media (pointer:coarse){
+    nav button:hover{
+        cursor: pointer;
+        color: var(--bright-blue);
+    }
+}
+@media (max-width: 700px){
     .menu-mobile{
         display: flex;
     }
