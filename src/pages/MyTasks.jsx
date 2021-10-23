@@ -19,6 +19,7 @@ const MyTasks = () =>{
     const [background, setBackground] = useState({'desktop':desk_lg, 'mobile':mob_lg});
     const [mode, toggleMode] = useState(true); //true = light, false = dark
     const changeMode = () =>{
+        document.getElementById("mode-button").disabled = true;
         document.getElementById("mode-button").style.animation = "change_mode 1s";
         setTimeout(()=>{
             toggleMode(!mode);
@@ -26,6 +27,7 @@ const MyTasks = () =>{
         },700)
         setTimeout(()=>{
             document.getElementById("mode-button").style.animation = null;
+            document.getElementById("mode-button").disabled = false;
         },1000)
        
         
