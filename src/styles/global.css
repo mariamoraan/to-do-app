@@ -7,4 +7,5 @@ body{
     min-height: 100vh;
     font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
+    background:  var(--bg-color);
 }

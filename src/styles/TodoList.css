@@ -2,30 +2,31 @@
     margin: 0;
     padding: 0;
     border-radius: 5px 5px 0 0;
-    background: var(--very-light-gray);
+    background: var(--bg-color-2);
     max-height: 50vh;
     overflow-y: scroll;
     list-style: none;
+    transition: 500ms ease-in-out;
 }
 
 .taskList-list::-webkit-scrollbar {
     -webkit-appearance: none;
 }
 .taskList-list::-webkit-scrollbar:vertical {
-    width:10px;
+    width:1px;
 }
 .taskList-list::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
     display: none;
 } 
 .taskList-list::-webkit-scrollbar:horizontal {
-    height: 10px;
+    height: 1px;
 }
 .taskList-list::-webkit-scrollbar-thumb {
     margin: 0;
     padding: 0;
     background-color: #797979;
     border-radius: 20px;
-    border: 2px solid #f1f2f3;
+    
 }
 .taskList-list::-webkit-scrollbar-track {
     border-radius: 10px;  
@@ -35,7 +36,8 @@
 
 .taskList-list-task{
     margin:0;
-    border-bottom: 0.5px solid var(--light-grayish-blue);
+    border-bottom: 0.5px solid var(--font-color);
+    transition: background 500ms ease-in-out;
     
 }
 @media (max-width: 600px){

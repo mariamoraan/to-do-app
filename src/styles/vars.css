@@ -5,13 +5,21 @@
     --dark-grayish-blue:hsl(236, 9%, 61%);
     --very-dark-grayish-blue:#484b6a;
     --bright-blue:  hsl(220, 98%, 61%);
+    --bg-color:white;
+    --bg-color-2:white;
+    --font-color-2:var(--very-dark-grayish-blue);
+    --font-color:var(--light-grayish-blue);
 }
 .dark{
     --very-dark-blue: hsl(235, 21%, 11%);
-    --very-dark-desaturated: Blue: hsl(235, 24%, 19%);
+    --very-dark-desaturated: hsl(235, 24%, 19%);
     --light-grayish-blue: hsl(234, 39%, 85%);
     --light-grayish-blue-hover: hsl(236, 33%, 92%);
     --dark-grayish-blue: hsl(234, 11%, 52%);
     --very-dark-grayish-blue: hsl(233, 14%, 35%);
     --very-dark-grayish-blue: hsl(237, 14%, 26%);
+    --bg-color: var(--very-dark-blue);
+    --bg-color-2:var(--very-dark-desaturated);
+    --font-color:var(--dark-grayish-blue);
+    --font-color-2:var(--light-grayish-blue);
 }

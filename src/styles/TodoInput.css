@@ -9,7 +9,7 @@
     padding:1em;
     font-size: 1rem;
     font-weight: 400;
-    color: var(--very-dark-grayish-blue);
+    color: var(--font-color-2);
     transition: 500ms ease-in-out;
     border: none;
     outline: none;
@@ -17,7 +17,7 @@
 }
 .task-input .task-text-input::placeholder { color: var(--dark-grayish-blue); }
 .task-input .task-text-input:focus{
-    color: var(--very-dark-grayish-blue);
+    color: var(--font-color-2);
     caret-color: var(--bright-blue);
 }
 form{
@@ -29,15 +29,15 @@ form{
     width: 100%;
     margin: 0;
     border-radius: 5px;
-    background: white;
+    background: var(--bg-color-2);
+    transition: 500ms ease-in-out;
     
-}
-input{
-   
 }
 
-.input{
-    
+
+input{
+    background: none;
+    width: 100%;
 }
 .send-button{
     height: 25px;
@@ -50,4 +50,5 @@ input{
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 100%;
+    cursor: pointer;
 }

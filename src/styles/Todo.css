@@ -4,9 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    
     /* border-bottom: 0.5px solid var(--light-grayish-blue); */
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
 }
 .remove-icon{
     padding-left: 1rem;
@@ -21,7 +20,7 @@
 }
 
 .completed-button{
-    background: var(--very-light-gray);
+    background: none;
     border: 1px solid var(--light-grayish-blue);
     width: 25px;
     height: 25px;
@@ -59,7 +58,7 @@
     margin:0;
     font-size: 1rem;
     font-weight: 400;
-    color: var(--very-dark-grayish-blue);
+    color: var(--font-color-2);
     transition: 500ms ease-in-out;
     width: 70%;
     text-overflow: clip;
@@ -68,7 +67,7 @@
     cursor: pointer;
 }
 .done{
-    color: var(--light-grayish-blue);
+    color: var(--font-color);
     text-decoration: line-through;
     animation-name: done-animation;
     animation-duration:500ms;
@@ -93,7 +92,7 @@
     .completed-button:hover{
         cursor: pointer;
         border-image-slice: 1;
-        background-image: linear-gradient(90deg,var(--very-light-gray),var(--very-light-gray)), 
+        background-image: linear-gradient(90deg,var(--bg-color-2),var(--bg-color-2)), 
         radial-gradient(circle at top left, hsl(192, 100%, 67%),hsl(280, 87%, 65%));
         background-origin: border-box;
         background-clip: content-box, border-box;

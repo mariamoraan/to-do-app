@@ -1,6 +1,7 @@
 .MyTasks{
     position: relative;
     min-height: 100vh;
+    background: var(--bg-color);
 }
 
 header{
@@ -15,11 +16,38 @@ header{
     background-position: start center;
     background-repeat: no-repeat;
 }
-h1{
+span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+span h1{
     margin: 0;
     padding:0;
-    margin-bottom: 2rem;
     color: var( --very-light-gray);
+}
+span img {
+    cursor: pointer;
+}
+span #mode-button{
+    background: none;
+    border: none;
+    outline: none;
+}
+@keyframes change_mode{
+    0%{
+        opacity: 100%;
+        transform: scale(1) rotate(0);
+    }
+    70%{
+        opacity: 20%;
+        transform: scale(0.2) rotate(180deg);
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(1) rotate(0);
+    }
 }
 
 .MyTasks-elems{ 

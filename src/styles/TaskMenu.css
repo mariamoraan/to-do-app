@@ -5,8 +5,9 @@ nav{
     justify-content: space-between;
     font-size: 0.7rem;
     color: var(--very-dark-grayish-blue);
-    background: var(--very-light-gray);
+    background: var(--bg-color-2);
     border-radius: 0 0 5px 5px;
+    transition: 500ms ease-in-out;
 }
 
 nav p,
