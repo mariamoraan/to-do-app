@@ -23,6 +23,7 @@
   },
   "homepage": "http://mia-moran.github.io/to-do-app",
   "dependencies": {
+    "firebase": "^9.1.3",
     "react": "^17.0.2",
     "react-beautiful-dnd": "^13.1.0",
     "react-dnd": "^14.0.4",
