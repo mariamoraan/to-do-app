@@ -61,6 +61,6 @@ Users should be able to:
 - Frontend Mentor - [@mia-moran](https://www.frontendmentor.io/profile/mia-moran)
 - Twitter - [@_mariamoraan](https://www.twitter.com/_mariamoraan)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
 
