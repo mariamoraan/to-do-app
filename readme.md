@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://mia-moran.github.io/to-do-app/](https://mia-moran.github.io/to-do-app/)
+- Live Site URL: [https://mia-moran.github.io/to-do-app/](https://mariamoraan.github.io/to-do-app/)
 
 ## My process
 
